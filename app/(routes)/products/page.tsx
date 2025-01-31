@@ -59,7 +59,6 @@ export default function ProductsPage() {
                 <div className="mt-4">
                   <h3 className="text-lg font-semibold">{product.name}</h3>
                   <p className="text-sm text-gray-500">{product.category}</p>
-                  <p className="text-lg font-medium mt-1">₹{product.price}</p>
                 </div>
               </div>
             </Link>

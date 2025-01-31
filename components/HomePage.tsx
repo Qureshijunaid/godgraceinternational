@@ -85,7 +85,11 @@ export default function HomePage({ products }: { products: any[] }) {
               At God Grace International, we take pride in offering a wide range of beautifully crafted items that reflect the rich cultural heritage and creativity of artisans from around the world.
               Every piece tells a story of skill, passion, and tradition, carefully crafted to bring beauty and uniqueness to your home or business. Whether you're searching for a special gift or something to add a personal touch to your space, we have something for every occasion.
               </p>
+      
+              <a href="/products">
               <Button size="lg">Explore Our Collection</Button>
+              </a>
+            
             </div>
           </div>
         </div>
@@ -147,11 +151,11 @@ export default function HomePage({ products }: { products: any[] }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
-              <h3 className="text-2xl font-bold mb-6">IndiCraft</h3>
+              <h3 className="text-2xl font-bold mb-6">God Grace International</h3>
               <div className="space-y-4">
-                <p>+91-81302 80813</p>
-                <p>vivek@indicraft.co.in</p>
-                <p>Ward number 42 and 43, Near Bhrami Petrol Pump, Tanwara, Jodhpur</p>
+                <p>+91-75058 86751</p>
+                <p>godgraceitnernational66@gmail.com</p>
+                <p>Hajra Villa, Sambhal</p>
               </div>
             </div>
             <div>
