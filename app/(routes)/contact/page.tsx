@@ -15,18 +15,17 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-lg font-semibold mb-2">Address</h3>
                 <p className="text-gray-600">
-                  Ward number 42 and 43,<br />
-                  Near Bhrami Petrol Pump,<br />
-                  Tanwara, Jodhpur
+                  Hajra Villa,<br />
+                  Sambhal
                 </p>
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2">Phone</h3>
-                <p className="text-gray-600">+91-81302 80813</p>
+                <p className="text-gray-600">+91-75058 86751</p>
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2">Email</h3>
-                <p className="text-gray-600">vivek@indicraft.co.in</p>
+                <p className="text-gray-600">godgraceitnernational66@gmail.com</p>
               </div>
             </div>
           </div>
