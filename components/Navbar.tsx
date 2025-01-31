@@ -10,7 +10,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-8">
             <Link href="/" className="text-xl font-bold flex items-center space-x-2">
               <Home className="w-5 h-5" />
-              <span>IndiCraft</span>
+              <span>God Grace International</span>
             </Link>
             <div className="hidden md:flex space-x-6">
               <Link href="/story" className="text-gray-600 hover:text-gray-900 hover:border-b-2 border-gray-900 flex items-center space-x-2">
