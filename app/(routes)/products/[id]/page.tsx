@@ -1,7 +1,6 @@
-"use client";
-
+// ./app/(routes)/products/[id]/page.tsx
 import { Button } from "@/components/ui/button";
-import { useParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const products = [
   {
@@ -46,9 +45,18 @@ const products = [
   },
 ];
 
-export default function ProductPage() {
-  const params = useParams();
-  const product = products.find(p => p.id === Number(params.id));
+export async function generateStaticParams() {
+  const productIds = products.map(p => p.id.toString());
+  return productIds.map(id => ({
+    id,
+  }));
+}
+
+export default function ProductPageDetails({ params }) {
+  const { id } = params; // Accessing the `id` parameter from props
+
+  const productId = id ? parseInt(id as string, 10) : NaN;
+  const product = products.find(p => p.id === productId);
 
   if (!product) {
     return <div>Product not found</div>;
