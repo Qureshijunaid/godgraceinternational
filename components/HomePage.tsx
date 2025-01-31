@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+
 import Link from "next/link";
 
 const carouselImages = [
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070",
-  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2080",
-  "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2032",
+  "images/carousal/mag.jpg",
+  "images/carousal/glassStand.jpg",
+  "images/carousal/candles.jpg",
+  "images/carousal/cup.jpg",
 ];
 
 export default function HomePage({ products }: { products: any[] }) {
@@ -45,7 +47,7 @@ export default function HomePage({ products }: { products: any[] }) {
               <img
                 src={image}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover"          
               />
             </div>
           ))}
@@ -70,17 +72,18 @@ export default function HomePage({ products }: { products: any[] }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
+           
               <img
-                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2032"
+                src={'images/img1.jpg'}
                 alt="Welcome"
                 className="rounded-lg shadow-xl"
               />
             </div>
             <div className="flex-1 space-y-6">
-              <h2 className="text-4xl font-bold">Welcome to IndiCraft</h2>
+              <h2 className="text-4xl font-bold">Welcome to God Grace International</h2>
               <p className="text-gray-600 text-lg">
-                Discover the beauty of traditional Indian craftsmanship merged with contemporary design. 
-                Our artisans create unique pieces that bring elegance and culture to your space.
+              At God Grace International, we take pride in offering a wide range of beautifully crafted items that reflect the rich cultural heritage and creativity of artisans from around the world.
+              Every piece tells a story of skill, passion, and tradition, carefully crafted to bring beauty and uniqueness to your home or business. Whether you're searching for a special gift or something to add a personal touch to your space, we have something for every occasion.
               </p>
               <Button size="lg">Explore Our Collection</Button>
             </div>
@@ -107,7 +110,7 @@ export default function HomePage({ products }: { products: any[] }) {
                       </div>
                       <div className="mt-4">
                         <h3 className="text-lg font-semibold">{product.name}</h3>
-                        <p className="text-gray-600">₹{product.price}</p>
+                        {/* <p className="text-gray-600">₹{product.price}</p> */}
                       </div>
                     </div>
                   </Link>
@@ -128,7 +131,7 @@ export default function HomePage({ products }: { products: any[] }) {
                       </div>
                       <div className="mt-4">
                         <h3 className="text-lg font-semibold">{product.name}</h3>
-                        <p className="text-gray-600">₹{product.price}</p>
+                        {/* <p className="text-gray-600">₹{product.price}</p> */}
                       </div>
                     </div>
                   </Link>
